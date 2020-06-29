@@ -1,0 +1,268 @@
+html {
+    min-height:100vh;
+    position:relative;
+}
+
+.nav-height {
+    height: 8vh;
+}
+
+.padding-top-3vh {
+    padding-top: 3vh;
+}
+
+.padding-top-20px {
+    padding-top: 20px;
+}
+
+body {
+    height:100vh;
+}
+
+.page-nav-bar {
+    background: white;
+}
+
+#page-body {
+    background: linear-gradient(to bottom, aliceblue, transparent);
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.font-serif {
+    font-family: serif;
+}
+
+.font-arial {
+    font-family: arial;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.color-white {
+    color: white;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.font-size-30px {
+    font-size: 30px;
+}
+
+.font-size-20px {
+    font-size: 20px;
+}
+
+.font-size-25px {
+    font-size: 25px;
+}
+
+.font-size-28px {
+    font-size: 28px;
+}
+
+.font-size-13px {
+    font-size: 13px;
+}
+
+.font-size-17px {
+    font-size: 17px;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.padding-left-right-45vh {
+    padding-left: 45vh;
+    padding-right: 45vh;
+}
+
+.padding-1 {
+    padding: 1%;
+}
+.padding-top-35vh {
+    padding-top: 35vh;
+}
+
+.background-black {
+    background: black;
+}
+
+.color-white {
+    color: white;
+}
+
+.margin-10 {
+    margin: 10%;
+}
+
+.margin-20 {
+    margin: 20%;
+}
+
+.margin-top-3 {
+    margin-top: 3%;
+}
+
+.margin-top-5 {
+    margin-top: 5%;
+}
+
+.margin-left-10 {
+    margin-left: 10%;
+}
+
+.margin-right-10 {
+    margin-right: 10%;
+}
+
+.padding-0 {
+    padding: 0%!important;
+}
+
+.brand-tag:hover {
+    transform: scale(1.3, 1.3);
+}
+
+.about-btn:hover {
+    transform: scale(1.3, 1.3);
+    color: white;
+}
+
+.card-body {
+    height: 120px;
+}
+
+.height-100px {
+    height: 100px;
+}
+
+.height-45px {
+    height: 45px;
+}
+
+.height-40px {
+    height: 40px;
+}
+
+.height-35px {
+    height: 35px;
+}
+
+.height-25px {
+    height: 25px;
+}
+
+.height-fit-content {
+    height: fit-content;
+}
+
+.padding-top-0.8 {
+    padding-top: 0.8%;
+}
+
+.padding-5px {
+    padding: 5px;
+}
+
+.padding-left-20px {
+    padding-left: 20px;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0%;
+}
+
+.margin-1 {
+    margin: 1%;
+}
+
+.label-css {
+    border-radius: 4px;
+    color: white;
+    padding: 1.5px;
+}
+
+.label-color-turquoise {
+    background: #25c0d8;
+    border: 2px solid #25c0d8;
+}
+
+.label-color-red {
+    background: #c53946;
+    border: 2px solid #c53946;
+}
+
+.label-color-gold {
+    background: #e2bd4e;
+    border: 2px solid #e2bd4e;
+}
+
+.label-color-grey {
+    background: #6c757d;
+    border: 2px solid #6c757d;
+}
+
+.label-color-green {
+    background: #6fd04f;
+    border: 2px solid #6fd04f;
+}
+
+.dark-blue-color {
+    color: darkblue;
+}
+
+.none-display {
+    display: none;
+}
+
+.block-display {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.center-align-items {
+    align-items: center;
+}
+
+.overflow-hidden {
+    overflow: hidden!important;
+}
+
+.width-100 {
+    width: 100%!important;
+}
+
+.height-100 {
+    height: 100%!important;
+}
+
+.height-157px {
+    height: 157px!important;
+}
+
+.left-border-solid-1 {
+    border-left: solid 1px;
+}
+
+.border-color-gainsboro {
+    border-color: gainsboro;
+}

@@ -1,0 +1,73 @@
+{% block content %}
+    <div class='search-results featured-card margin-right-10 margin-left-10 margin-top-3 font-serif'>
+        <span class='font-size-20px'>Results</span>
+        <div class="card text-center">
+            <!-- <div class="card-header font-size-20px padding-5px padding-left-20px text-align-left">
+                Featured
+            </div> -->
+
+            <div class="row card-body padding-0 overflow-hidden height-157px">
+
+                <div class='col-2 justify-content-center flex center-align-items overflow-hidden'>
+                    <img src="{{ response['featured'].image_url }}" class="height-100 width-100"/>
+                </div>
+
+                <div class='col-8 text-align-left padding-top-20px'>
+                    <span class='font-size-28px dark-blue-color'>{{ response['featured'].price_currency }}{{ response['featured'].price }}</span>
+                    {% if not response['featured'].free_shipping %}
+                        <span class='font-size-13px'>+ shipping ({{ response['featured'].shipping_currency }} {{ response['featured'].shipping_cost }})</span></h6>
+                    {% endif %}
+
+                    {% if response['featured'].availability == Settings.INSTOCK_LABEL %}
+                        <span class='label-css label-color-turquoise'>{{ response['featured'].availability }}</span>
+                    {% else %}
+                        <span class='label-css label-color-red'>{{ response['featured'].availability }}</span>
+                    {% endif %}
+
+                    {% if response['featured'].item_condition == Settings.BRAND_NEW_ITEM %}
+                        <span class='label-css label-color-gold'>{{ response['featured'].item_condition }}</span>
+                    {% else %}
+                        <span class='label-css label-color-grey'>{{ response['featured'].item_condition }}</span>
+                    {% endif %}
+
+                    {% if response['featured'].free_shipping %}
+                        <span class='label-css label-color-green'>{{ Settings.FREE_SHIPPING }}</span>
+                    {% endif %}
+
+                    <h6 class="card-text margin-bottom-0 font-size-17px">
+                        {{response['featured'].category}}: <i>{{ response['featured'].name }}</i>
+                    <p class='margin-bottom-0'>Pay through: <i>{{ ', '.join(response['featured'].payment) }}</i></p>
+                </div>
+
+                <div class='col-2 justify-content-center flex center-align-items overflow-hidden'>
+                    <a target="_blank" href="{{ response['featured'].url }}" class="height-100 width-100">
+                        <img src="{{ response['featured'].partner_icon_path }}" class="height-100 width-100 left-border-solid-1 border-color-gainsboro"/>
+                        <!-- <h5 class="card-title margin-bottom-0">{{ response['featured'].partner }}</h5> -->
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+            <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingTwo1">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                        <h5 class="mb-0">Amazon <i class="accordion-arrow fas fa-angle-down rotate-icon float-right" aria-hidden="true"></i></h5>
+                    </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordionEx1">
+                    <div class="card-body">
+                        Blaaah
+                    </div>
+                </div>
+
+              </div>
+        </div>
+    </div>
+{% endblock %}

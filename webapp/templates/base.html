@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% block head %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="{{ Settings.MYYNAH_LOGO_IMG_PATH }}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="static/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        <title>{{ Settings.WEBSITE_NAME }}</title>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="static/javascript/main.js" defer></script>
+        {% endblock %}
+    </head>
+    <body id="page-body">
+        <div>
+            <div class="collapse navbar-collapse" id="my-navbar-collapse">
+                <div class="bg-dark p-4">
+                    <h5 class="text-white h4">Collapsed content</h5>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+            </div>
+
+            <nav class="navbar container-fluid-nav navbar-dark bg-dark nav-height navbar-fixed-side navbar-fixed-side-left" role="navigation">
+                <!-- <div class="float-left">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="slide-collapse" data-target="#my-navbar-collapse" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div> -->
+                <div class="mx-auto color-white brand-tag pointer-cursor">
+                    <img src="{{ Settings.MYYNAH_LOGO_IMG_PATH }}" class='height-45px'/>
+                    <img src="{{ Settings.MYYNAH_IMG_PATH }}" class='height-35px'/>
+                    <!-- <span class="font-serif font-size-30px">{{ Settings.WEBSITE_NAME }}</span> -->
+                </div>
+                <div>
+                    <a class="nav-link active float-right color-white about-btn" href="#">About</a>
+                </div>
+            </nav>
+        </div>
+
+        <div id="page-content">
+        {% block content %}{% endblock %}
+        </div>
+
+        <div class="text-center margin-20 none-display" id="loader">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+    </body>
+</html>

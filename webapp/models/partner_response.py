@@ -1,0 +1,16 @@
+class PartnerResponse(object):
+    def __init__(self, **kwargs):
+        self.partner = kwargs.get('partner')
+        self.partner_icon_path = kwargs.get('partner_icon_path')
+        self.name = kwargs.get('name')
+        self.category = kwargs.get('category')
+        self.url = kwargs.get('url')
+        self.image_url = kwargs.get('image_url')
+        self.payment = kwargs.get('payment')
+        self.price = kwargs.get('price')
+        self.price_currency = kwargs.get('price_currency')
+        self.shipping_cost = kwargs.get('shipping_cost')
+        self.shipping_currency = kwargs.get('shipping_currency')
+        self.free_shipping = kwargs.get('free_shipping')
+        self.availability = kwargs.get('availability')
+        self.item_condition = kwargs.get('item_condition')
