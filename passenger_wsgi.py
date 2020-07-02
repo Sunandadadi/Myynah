@@ -1,1 +1,1 @@
-from run import app as application
+from run_prod import app as application

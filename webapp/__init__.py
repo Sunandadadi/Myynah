@@ -5,7 +5,7 @@ app.config.from_object('configuration')
 
 import webapp.views
 
-# app.config.from_object('config.default')
+# app.config.from_object('configuration.default')
 # app.config.from_envvar('APP_CONFIG_FILE')
 
 # @app.errorhandler(404)
