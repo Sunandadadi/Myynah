@@ -1,4 +1,4 @@
-from config.default import Settings
+from configuration.default import Settings
 from webapp import app
 
 if __name__ == '__main__':

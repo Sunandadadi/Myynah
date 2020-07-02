@@ -1,7 +1,7 @@
 from flask import render_template
 from webapp.models.partners import Partners
 from webapp.models.Utils import Utils
-from config.default import Settings
+from configuration.default import Settings
 from webapp import app
 
 

@@ -28,7 +28,7 @@ $( document ).ready(function() {
             return;
         };
         $.ajax({
-            url: 'http://localhost:8080/search_partners/' + search_input,
+            url: 'https://myynah.com/search_partners/' + search_input,
             type: 'GET',
             dataType: 'html'
         }).then(function(data) {
@@ -46,7 +46,7 @@ $( document ).ready(function() {
 
     $(document).on('click', '.about-btn', function() {
         $.ajax({
-            url: 'http://localhost:8080/about',
+            url: 'https://myynah.com/about',
             type: 'GET',
             dataType: 'html'
 

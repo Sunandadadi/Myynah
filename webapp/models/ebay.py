@@ -1,6 +1,6 @@
 from webapp.models.partner_response import PartnerResponse
 from webapp.models.client.base_client import BaseClient
-from config.default import Settings
+from configuration.default import Settings
 from webapp.models.currency import Currency
 
 class Ebay(object):
